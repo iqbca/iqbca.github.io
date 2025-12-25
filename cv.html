@@ -1,58 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>CV | Asif</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
 
-<div class="layout">
+body {
+  background: #0b1120;
+  color: #e5e7eb;
+}
 
-  <aside class="sidebar">
-    <div>
-      <h2>Asif</h2>
-      <nav>
-        <a href="index.html">Overview</a>
-        <a href="projects.html">Projects</a>
-        <a class="active" href="cv.html">CV</a>
-      </nav>
-    </div>
-  </aside>
+/* ---------- TOP BAR (MOBILE) ---------- */
+.topbar {
+  display: none;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: #020617;
+}
 
-  <main class="content fade-in">
+.topbar button {
+  font-size: 1.4rem;
+  background: none;
+  color: #38bdf8;
+  border: none;
+}
 
-    <h1 class="page-title">Professional Experience</h1>
+/* ---------- MOBILE NAV ---------- */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background: #020617;
+}
 
-    <section class="cv-block reveal">
-      <h2>Investment Specialist – Mercer (UK Advisory)</h2>
-      <p class="period">2019 – Present</p>
-      <ul>
-        <li>Performance & attribution analysis for UK institutional clients</li>
-        <li>Benchmarking, risk metrics, economic assumptions</li>
-        <li>Automation using Python & AI tools</li>
-      </ul>
-    </section>
+.mobile-nav a {
+  padding: 15px 20px;
+  color: #e5e7eb;
+  text-decoration: none;
+}
 
-    <section class="cv-block reveal">
-      <h2>Education</h2>
-      <p>MBA – Finance (AI, Derivatives, Strategy)</p>
-    </section>
+.mobile-nav a.active {
+  color: #38bdf8;
+}
 
-    <section class="cv-block reveal">
-      <h2>Core Skills</h2>
-      <div class="tags">
-        <span>Portfolio Analytics</span>
-        <span>Risk Management</span>
-        <span>Python</span>
-        <span>Power BI</span>
-        <span>Excel VBA</span>
-      </div>
-    </section>
+/* ---------- DESKTOP LAYOUT ---------- */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
 
-  </main>
-</div>
+.sidebar {
+  width: 260px;
+  background: #020617;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-<script src="script.js"></script>
-</body>
-</html>
+.sidebar nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+.sidebar nav a.active {
+  color: #38bdf8;
+}
+
+.content {
+  flex: 1;
+  padding: 60px;
+}
+
+/* ---------- HERO ---------- */
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  max-width: 700px;
+  color: #94a3b8;
+}
+
+.hero-actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background: #38bdf8;
+  color: #020617;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* ---------- CARDS ---------- */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.stat-card,
+.project-card {
+  background: #020617;
+  padding: 30px;
+  border-radius: 14px;
+}
+
+/* ---------- ANIMATIONS ---------- */
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .topbar { display: flex; }
+  .sidebar { display: none; }
+  .layout { flex-direction: column; }
+  .content { padding: 30px 20px; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 1.9rem; }
+}
+
+/* 📲 TABLET */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+  .content { padding: 40px; }
+}
