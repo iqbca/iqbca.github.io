@@ -1,6 +1,6 @@
 * {
-  box-sizing: border-box;
   margin: 0;
+  box-sizing: border-box;
   font-family: "Segoe UI", sans-serif;
 }
 
@@ -9,6 +9,39 @@ body {
   color: #e5e7eb;
 }
 
+/* ---------- TOP BAR (MOBILE) ---------- */
+.topbar {
+  display: none;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: #020617;
+}
+
+.topbar button {
+  font-size: 1.4rem;
+  background: none;
+  color: #38bdf8;
+  border: none;
+}
+
+/* ---------- MOBILE NAV ---------- */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background: #020617;
+}
+
+.mobile-nav a {
+  padding: 15px 20px;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.mobile-nav a.active {
+  color: #38bdf8;
+}
+
+/* ---------- DESKTOP LAYOUT ---------- */
 .layout {
   display: flex;
   min-height: 100vh;
@@ -16,43 +49,22 @@ body {
 
 .sidebar {
   width: 260px;
-  background: linear-gradient(180deg, #020617, #020617cc);
-  padding: 30px 24px;
+  background: #020617;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-}
-
-.sidebar h2 {
-  color: #38bdf8;
-}
-
-.tagline {
-  color: #94a3b8;
-  margin-bottom: 30px;
 }
 
 .sidebar nav a {
   display: block;
-  padding: 10px 12px;
-  border-radius: 6px;
-  color: #e5e7eb;
+  padding: 10px;
   text-decoration: none;
-  margin-bottom: 8px;
+  color: #e5e7eb;
 }
 
-.sidebar nav a.active,
-.sidebar nav a:hover {
-  background: #1e293b;
+.sidebar nav a.active {
   color: #38bdf8;
-}
-
-.sidebar-meta {
-  font-size: 0.85rem;
-  color: #94a3b8;
 }
 
 .content {
@@ -60,14 +72,14 @@ body {
   padding: 60px;
 }
 
+/* ---------- HERO ---------- */
 .hero h1 {
-  font-size: 2.6rem;
-  margin-bottom: 15px;
+  font-size: 2.5rem;
 }
 
 .hero p {
+  max-width: 700px;
   color: #94a3b8;
-  max-width: 720px;
 }
 
 .hero-actions {
@@ -82,7 +94,6 @@ body {
   padding: 12px 22px;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: 600;
 }
 
 .btn-secondary {
@@ -93,57 +104,22 @@ body {
   text-decoration: none;
 }
 
+/* ---------- CARDS ---------- */
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  margin: 50px 0;
+  margin-top: 50px;
 }
 
 .stat-card,
-.project-card,
-.cv-block {
+.project-card {
   background: #020617;
   padding: 30px;
   border-radius: 14px;
-  border: 1px solid #1e293b;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.stat-card:hover,
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 40px rgba(56,189,248,0.15);
-}
-
-.project-card {
-  margin-bottom: 30px;
-}
-
-.subtitle {
-  color: #94a3b8;
-  margin-bottom: 15px;
-}
-
-.tags span {
-  display: inline-block;
-  background: #1e293b;
-  padding: 6px 12px;
-  border-radius: 20px;
-  margin: 6px 6px 0 0;
-  font-size: 0.85rem;
-}
-
-.page-title {
-  font-size: 2.2rem;
-  margin-bottom: 40px;
-}
-
-.period {
-  color: #94a3b8;
-  font-size: 0.9rem;
-}
-
+/* ---------- ANIMATIONS ---------- */
 .fade-in {
   animation: fadeIn 0.8s ease forwards;
 }
@@ -153,7 +129,20 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
+/* ================= RESPONSIVE ================= */
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .topbar { display: flex; }
+  .sidebar { display: none; }
+  .layout { flex-direction: column; }
+  .content { padding: 30px 20px; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 1.9rem; }
+}
+
+/* 📲 TABLET */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+  .content { padding: 40px; }
 }
