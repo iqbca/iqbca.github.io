@@ -7,42 +7,50 @@
 </head>
 <body>
 
-<nav>
-  <h2>Asif</h2>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="cv.html">CV</a></li>
-  </ul>
-</nav>
+<div class="layout">
+  <aside class="sidebar">
+    <h2>Asif</h2>
+    <nav>
+      <a href="index.html">Overview</a>
+      <a href="projects.html">Projects</a>
+      <a href="cv.html" class="active">CV</a>
+    </nav>
+  </aside>
 
-<section class="container">
-  <h1>Curriculum Vitae</h1>
+  <main class="content">
 
-  <h2>Experience</h2>
-  <p><strong>Investment Specialist – Mercer (UK Advisory)</strong></p>
-  <ul>
-    <li>Performance & attribution analysis</li>
-    <li>Benchmarking & client reporting</li>
-    <li>Automation using Python & AI tools</li>
-  </ul>
+    <h1>Professional Experience</h1>
 
-  <h2>Education</h2>
-  <p>MBA (Finance + AI)</p>
+    <section class="cv-block">
+      <h2>Investment Specialist – Mercer (UK Advisory)</h2>
+      <p class="period">2019 – Present</p>
+      <ul>
+        <li>Performance & attribution analysis for UK institutional clients</li>
+        <li>Benchmarking, risk metrics & economic assumptions</li>
+        <li>Automation using Python & AI tools</li>
+        <li>Client-ready reporting under strict governance standards</li>
+      </ul>
+    </section>
 
-  <h2>Skills</h2>
-  <ul class="skills">
-    <li>Python</li>
-    <li>Power BI</li>
-    <li>Excel / VBA</li>
-    <li>Portfolio Analytics</li>
-    <li>Risk Metrics</li>
-  </ul>
-</section>
+    <section class="cv-block">
+      <h2>Education</h2>
+      <p>MBA – Finance (AI, Derivatives, Strategy)</p>
+    </section>
 
-<footer>
-  <p>© 2025 Asif</p>
-</footer>
+    <section class="cv-block">
+      <h2>Core Skills</h2>
+      <div class="tags">
+        <span>Portfolio Analytics</span>
+        <span>Risk Management</span>
+        <span>Python</span>
+        <span>Power BI</span>
+        <span>Excel VBA</span>
+        <span>AI in Finance</span>
+      </div>
+    </section>
+
+  </main>
+</div>
 
 </body>
 </html>
