@@ -3,65 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Projects | Asif</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="layout">
+<header class="topbar">
+  <h2>Asif</h2>
+  <button id="menuBtn">☰</button>
+</header>
 
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html">Overview</a>
+  <a href="projects.html" class="active">Projects</a>
+  <a href="cv.html">CV</a>
+</nav>
+
+<div class="layout">
   <aside class="sidebar">
-    <div>
-      <h2>Asif</h2>
-      <nav>
-        <a href="index.html">Overview</a>
-        <a class="active" href="projects.html">Projects</a>
-        <a href="cv.html">CV</a>
-      </nav>
-    </div>
+    <nav>
+      <a href="index.html">Overview</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="cv.html">CV</a>
+    </nav>
   </aside>
 
   <main class="content fade-in">
-
     <h1 class="page-title">Key Projects</h1>
 
     <div class="project-card reveal">
       <h2>AI-Powered Portfolio Analytics Dashboard</h2>
-      <p class="subtitle">End-to-end MF / ETF analytics engine</p>
       <ul>
-        <li>Transaction-date aware historical pricing</li>
-        <li>Sharpe, Sortino, Treynor, Alpha, Jensen’s Alpha</li>
-        <li>VaR, CVaR, Drawdown, Capture Ratios</li>
-        <li>Python backend + Power BI frontend</li>
+        <li>Sharpe, Sortino, Alpha, VaR, CVaR</li>
+        <li>Rolling returns & attribution</li>
+        <li>Python backend + Power BI</li>
       </ul>
-      <div class="tags">
-        <span>Python</span><span>Pandas</span><span>Power BI</span>
-      </div>
     </div>
 
     <div class="project-card reveal">
       <h2>Automated Financial Report Generator</h2>
-      <p class="subtitle">UK institutional reporting automation</p>
       <ul>
-        <li>Excel–Python hybrid workflow</li>
-        <li>Benchmark-relative attribution</li>
-        <li>Reusable quarterly templates</li>
+        <li>Excel–Python automation</li>
+        <li>UK advisory reporting</li>
       </ul>
-      <div class="tags">
-        <span>Excel VBA</span><span>Python</span>
-      </div>
-    </div>
-
-    <div class="project-card reveal">
-      <h2>ETF / MF Rebalancing Optimizer</h2>
-      <p class="subtitle">Constraint-based allocation engine</p>
-      <ul>
-        <li>Risk-adjusted optimization logic</li>
-        <li>Transaction-level inputs</li>
-        <li>Scalable & automation-ready</li>
-      </ul>
-      <div class="tags">
-        <span>Optimization</span><span>Quant</span>
-      </div>
     </div>
 
   </main>
