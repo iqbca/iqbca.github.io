@@ -8,69 +8,65 @@
 <body>
 
 <div class="layout">
+
   <aside class="sidebar">
-    <h2>Asif</h2>
-    <nav>
-      <a href="index.html">Overview</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="cv.html">CV</a>
-    </nav>
+    <div>
+      <h2>Asif</h2>
+      <nav>
+        <a href="index.html">Overview</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
   </aside>
 
-  <main class="content">
+  <main class="content fade-in">
 
-    <h1>Key Projects</h1>
+    <h1 class="page-title">Key Projects</h1>
 
-    <div class="project">
+    <div class="project-card reveal">
       <h2>AI-Powered Portfolio Analytics Dashboard</h2>
-      <p class="subtitle">End-to-end analytics engine for MF / ETF portfolios</p>
-
+      <p class="subtitle">End-to-end MF / ETF analytics engine</p>
       <ul>
-        <li>Automated historical price fetching (transaction-date aware)</li>
-        <li>Performance metrics: Sharpe, Sortino, Treynor, Alpha, Jensen’s Alpha</li>
-        <li>Risk analytics: VaR, CVaR, Drawdown, Downside Deviation</li>
-        <li>Rolling returns, capture ratios, skewness & kurtosis</li>
-        <li>Python backend + Power BI dynamic front-end</li>
+        <li>Transaction-date aware historical pricing</li>
+        <li>Sharpe, Sortino, Treynor, Alpha, Jensen’s Alpha</li>
+        <li>VaR, CVaR, Drawdown, Capture Ratios</li>
+        <li>Python backend + Power BI frontend</li>
       </ul>
-
       <div class="tags">
-        <span>Python</span><span>Pandas</span><span>Power BI</span><span>Finance</span>
+        <span>Python</span><span>Pandas</span><span>Power BI</span>
       </div>
     </div>
 
-    <div class="project">
+    <div class="project-card reveal">
       <h2>Automated Financial Report Generator</h2>
-      <p class="subtitle">Client-ready UK advisory reports</p>
-
+      <p class="subtitle">UK institutional reporting automation</p>
       <ul>
-        <li>Excel–Python hybrid system</li>
-        <li>Benchmark-relative performance attribution</li>
-        <li>Reusable templates for quarterly reporting</li>
-        <li>Reduced manual effort & error risk</li>
+        <li>Excel–Python hybrid workflow</li>
+        <li>Benchmark-relative attribution</li>
+        <li>Reusable quarterly templates</li>
       </ul>
-
       <div class="tags">
-        <span>Excel VBA</span><span>Python</span><span>Reporting</span>
+        <span>Excel VBA</span><span>Python</span>
       </div>
     </div>
 
-    <div class="project">
+    <div class="project-card reveal">
       <h2>ETF / MF Rebalancing Optimizer</h2>
-      <p class="subtitle">Constraint-based allocation system</p>
-
+      <p class="subtitle">Constraint-based allocation engine</p>
       <ul>
         <li>Risk-adjusted optimization logic</li>
-        <li>Supports transaction-level portfolio inputs</li>
-        <li>Designed for scalability & automation</li>
+        <li>Transaction-level inputs</li>
+        <li>Scalable & automation-ready</li>
       </ul>
-
       <div class="tags">
-        <span>Optimization</span><span>Quant</span><span>Python</span>
+        <span>Optimization</span><span>Quant</span>
       </div>
     </div>
 
   </main>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
