@@ -16,8 +16,14 @@ body {
 
 .sidebar {
   width: 260px;
-  background: #020617;
-  padding: 30px;
+  background: linear-gradient(180deg, #020617, #020617cc);
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
 
 .sidebar h2 {
@@ -31,14 +37,22 @@ body {
 
 .sidebar nav a {
   display: block;
+  padding: 10px 12px;
+  border-radius: 6px;
   color: #e5e7eb;
   text-decoration: none;
-  margin: 15px 0;
+  margin-bottom: 8px;
 }
 
 .sidebar nav a.active,
 .sidebar nav a:hover {
+  background: #1e293b;
   color: #38bdf8;
+}
+
+.sidebar-meta {
+  font-size: 0.85rem;
+  color: #94a3b8;
 }
 
 .content {
@@ -47,34 +61,63 @@ body {
 }
 
 .hero h1 {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   margin-bottom: 15px;
 }
 
 .hero p {
   color: #94a3b8;
-  max-width: 700px;
+  max-width: 720px;
+}
+
+.hero-actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background: #38bdf8;
+  color: #020617;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
 }
 
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 25px;
   margin: 50px 0;
 }
 
-.stat-card {
-  background: #020617;
-  padding: 25px;
-  border-radius: 12px;
-  text-align: center;
-}
-
-.project {
+.stat-card,
+.project-card,
+.cv-block {
   background: #020617;
   padding: 30px;
+  border-radius: 14px;
+  border: 1px solid #1e293b;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover,
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(56,189,248,0.15);
+}
+
+.project-card {
   margin-bottom: 30px;
-  border-radius: 12px;
 }
 
 .subtitle {
@@ -87,15 +130,30 @@ body {
   background: #1e293b;
   padding: 6px 12px;
   border-radius: 20px;
-  margin: 5px 5px 0 0;
+  margin: 6px 6px 0 0;
   font-size: 0.85rem;
 }
 
-.cv-block {
+.page-title {
+  font-size: 2.2rem;
   margin-bottom: 40px;
 }
 
 .period {
   color: #94a3b8;
   font-size: 0.9rem;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
 }
