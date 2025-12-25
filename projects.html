@@ -7,50 +7,70 @@
 </head>
 <body>
 
-<nav>
-  <h2>Asif</h2>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="cv.html">CV</a></li>
-  </ul>
-</nav>
+<div class="layout">
+  <aside class="sidebar">
+    <h2>Asif</h2>
+    <nav>
+      <a href="index.html">Overview</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </aside>
 
-<section class="container">
-  <h1>Projects</h1>
+  <main class="content">
 
-  <div class="project-card">
-    <h3>AI-Powered Portfolio Analytics Dashboard</h3>
-    <p>
-      Python + Power BI system calculating Sharpe, Sortino, Alpha, VaR, CVaR,
-      rolling returns and attribution for MF/ETF portfolios.
-    </p>
-    <p class="tech">Tech: Python, Pandas, NumPy, Power BI</p>
-  </div>
+    <h1>Key Projects</h1>
 
-  <div class="project-card">
-    <h3>Automated Performance Reporting Tool</h3>
-    <p>
-      Excel-Python integrated system generating UK client-ready
-      performance & benchmarking reports.
-    </p>
-    <p class="tech">Tech: Python, Excel VBA, APIs</p>
-  </div>
+    <div class="project">
+      <h2>AI-Powered Portfolio Analytics Dashboard</h2>
+      <p class="subtitle">End-to-end analytics engine for MF / ETF portfolios</p>
 
-  <div class="project-card">
-    <h3>ETF & MF Rebalancing Optimizer</h3>
-    <p>
-      Optimizes allocations using risk-adjusted return metrics
-      and constraint-based rebalancing logic.
-    </p>
-    <p class="tech">Tech: Python, Optimization</p>
-  </div>
+      <ul>
+        <li>Automated historical price fetching (transaction-date aware)</li>
+        <li>Performance metrics: Sharpe, Sortino, Treynor, Alpha, Jensen’s Alpha</li>
+        <li>Risk analytics: VaR, CVaR, Drawdown, Downside Deviation</li>
+        <li>Rolling returns, capture ratios, skewness & kurtosis</li>
+        <li>Python backend + Power BI dynamic front-end</li>
+      </ul>
 
-</section>
+      <div class="tags">
+        <span>Python</span><span>Pandas</span><span>Power BI</span><span>Finance</span>
+      </div>
+    </div>
 
-<footer>
-  <p>© 2025 Asif</p>
-</footer>
+    <div class="project">
+      <h2>Automated Financial Report Generator</h2>
+      <p class="subtitle">Client-ready UK advisory reports</p>
+
+      <ul>
+        <li>Excel–Python hybrid system</li>
+        <li>Benchmark-relative performance attribution</li>
+        <li>Reusable templates for quarterly reporting</li>
+        <li>Reduced manual effort & error risk</li>
+      </ul>
+
+      <div class="tags">
+        <span>Excel VBA</span><span>Python</span><span>Reporting</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <h2>ETF / MF Rebalancing Optimizer</h2>
+      <p class="subtitle">Constraint-based allocation system</p>
+
+      <ul>
+        <li>Risk-adjusted optimization logic</li>
+        <li>Supports transaction-level portfolio inputs</li>
+        <li>Designed for scalability & automation</li>
+      </ul>
+
+      <div class="tags">
+        <span>Optimization</span><span>Quant</span><span>Python</span>
+      </div>
+    </div>
+
+  </main>
+</div>
 
 </body>
 </html>
