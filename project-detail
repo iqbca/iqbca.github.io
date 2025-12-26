@@ -1,69 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Project Case Study | Portfolio Analytics</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<section class="section reveal">
+  <h2>Problem</h2>
+  <p>Manual workflows caused delays and inconsistency.</p>
+</section>
 
-<div class="layout">
-  <aside class="sidebar">
-    <h2>Asif Iqbal</h2>
-    <nav>
-      <a href="projects.html">← Back to Projects</a>
-    </nav>
-  </aside>
+<section class="section reveal">
+  <h2>Approach</h2>
+  <img src="assets/process-diagram.png" alt="Process diagram">
+  <ul>
+    <li>Transaction-aware pricing</li>
+    <li>Risk & performance metrics</li>
+    <li>Power BI dashboards</li>
+  </ul>
+</section>
 
-  <main class="content">
-    <div class="container">
-
-      <h1 class="page-title fade">AI-Powered Portfolio Analytics Platform</h1>
-
-      <section class="section fade delay-1">
-        <h2>Problem</h2>
-        <p>
-          Manual portfolio analysis workflows were slow, error-prone,
-          and inconsistent across asset classes and time periods.
-        </p>
-      </section>
-
-      <section class="section fade delay-2">
-        <h2>Approach</h2>
-
-        <div class="case-step">
-          <h3>Data Engineering</h3>
-          <p>Transaction-aware historical price fetching and validation.</p>
-        </div>
-
-        <div class="case-step">
-          <h3>Analytics Layer</h3>
-          <p>
-            Sharpe, Sortino, Alpha, VaR, CVaR, rolling returns,
-            capture ratios.
-          </p>
-        </div>
-
-        <div class="case-step">
-          <h3>Presentation</h3>
-          <p>Power BI dashboards & standardized report packs.</p>
-        </div>
-      </section>
-
-      <section class="section fade delay-3">
-        <h2>Outcome</h2>
-        <ul>
-          <li>40%+ reduction in reporting time</li>
-          <li>Reusable analytics engine</li>
-          <li>Improved data confidence for decision-making</li>
-        </ul>
-      </section>
-
-    </div>
-  </main>
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
+<section class="section reveal">
+  <h2>Outcome</h2>
+  <ul>
+    <li>40%+ reduction in turnaround time</li>
+    <li>Reusable analytics engine</li>
+    <li>Improved data confidence</li>
+  </ul>
+</section>
