@@ -287,3 +287,32 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+
+@media print {
+  body {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  .sidebar,
+  .download-btn,
+  nav,
+  .hero img {
+    display: none !important;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .section {
+    border: none;
+    padding: 20px 0;
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3 {
+    color: #000000;
+  }
+}
