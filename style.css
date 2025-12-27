@@ -1,37 +1,55 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 :root{
---bg-main:#f8fafc;--bg-panel:#ffffff;--border:#e5e7eb;
---sidebar-bg:#0f172a;--accent:#2563eb;
+--bg:#f8fafc;--panel:#ffffff;--border:#e5e7eb;
+--sidebar:#0f172a;--accent:#1d4ed8;
 --text:#0f172a;--muted:#475569;
 }
 *{margin:0;box-sizing:border-box;font-family:Inter,system-ui}
-body{background:var(--bg-main);color:var(--text);line-height:1.65}
+body{background:var(--bg);color:var(--text);line-height:1.8}
 .layout{display:flex;min-height:100vh}
-.sidebar{width:280px;background:var(--sidebar-bg);padding:28px 24px;position:sticky;top:0;height:100vh}
-.sidebar h2{color:#fff}
-.tagline{color:#cbd5f5;font-size:.85rem;margin:6px 0 24px}
-.sidebar nav a{display:block;padding:10px 14px;margin-bottom:6px;color:#e5e7eb;text-decoration:none;border-radius:6px}
-.sidebar nav a.active,.sidebar nav a:hover{background:rgba(37,99,235,.15)}
-.download-btn{margin-top:20px;padding:10px;background:var(--accent);color:#fff;border-radius:6px;text-align:center;text-decoration:none;font-weight:600}
-.content{flex:1;padding:64px 80px}
-.container{max-width:1100px}
-.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;margin-bottom:60px}
-.hero h1{font-size:2.8rem}
-.hero p{color:var(--muted);margin-top:12px}
-.hero img{width:100%;border-radius:10px;border:1px solid var(--border)}
-.section{background:var(--bg-panel);border:1px solid var(--border);border-radius:8px;padding:36px;margin-bottom:40px}
-.section h2{font-size:1.6rem;margin-bottom:14px}
-.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.metric h3{font-size:2.2rem;color:var(--accent)}
-.tags{display:flex;flex-wrap:wrap;gap:10px}
-.tags span{background:#f1f5f9;border:1px solid var(--border);padding:6px 12px;border-radius:999px;font-size:.8rem}
-.timeline{border-left:2px solid var(--border);padding-left:30px}
-.timeline-item{margin-bottom:24px;position:relative}
-.timeline-dot{position:absolute;left:-9px;top:6px;width:10px;height:10px;background:var(--accent);border-radius:50%}
-.blog-card{border:1px solid var(--border);padding:24px;border-radius:8px;margin-bottom:24px}
-.blog-meta{font-size:.85rem;color:var(--muted)}
-.reveal{opacity:0;transform:translateY(16px);transition:.6s}
-.reveal.active{opacity:1;transform:none}
-@media print{.sidebar,.download-btn{display:none}body{background:#fff;color:#000}}
-@media(max-width:900px){.layout{flex-direction:column}.sidebar{width:100%;height:auto}.content{padding:32px 20px}.hero{grid-template-columns:1fr}}
+.sidebar{width:300px;background:var(--sidebar);padding:32px 26px;position:sticky;top:0;height:100vh}
+.sidebar h2{color:#fff;font-size:1.5rem}
+.tagline{color:#c7d2fe;font-size:.9rem;margin:8px 0 26px}
+.sidebar nav a{display:block;padding:12px 16px;margin-bottom:8px;color:#e5e7eb;text-decoration:none;border-radius:8px}
+.sidebar nav a.active,.sidebar nav a:hover{background:rgba(29,78,216,.18)}
+.download-btn{margin-top:24px;padding:12px;background:var(--accent);color:#fff;border-radius:8px;text-align:center;text-decoration:none;font-weight:600}
+.content{flex:1;padding:72px 96px}
+.container{max-width:1400px}
+.section{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:48px;margin-bottom:48px}
+.section h2{font-size:2rem;margin-bottom:20px}
+.section h3{margin-top:26px;font-size:1.25rem}
+.section p{margin-bottom:16px;max-width:100ch}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{border:1px solid var(--border);padding:28px;border-radius:12px}
+.metric{border:1px solid var(--border);padding:22px;border-radius:12px;text-align:center}
+.metric h4{font-size:1.9rem;color:var(--accent)}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+ul{padding-left:20px}
+svg{margin-top:18px;width:100%}
+img.mock{width:100%;border:1px solid var(--border);border-radius:12px;margin-top:18px}
+@media(max-width:1100px){
+.layout{flex-direction:column}
+.sidebar{width:100%;height:auto}
+.content{padding:36px 22px}
+.grid-3,.skills-grid{grid-template-columns:1fr}
+}
+/* Case Study Cards */
+.link-card {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+}
+
+.card-meta {
+  display: block;
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 500;
+}
