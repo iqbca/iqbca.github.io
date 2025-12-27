@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Diary & Personal Logging Application | Case Study</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <h2>Asif Iqbal</h2>
+    <p class="tagline">Senior Investment Analytics & Automation</p>
+    <nav>
+      <a href="index.html">Overview</a>
+      <a class="active" href="projects.html">Case Studies</a>
+      <a href="skills.html">Capabilities</a>
+      <a href="cv.html">Career</a>
+      <a href="blog.html">Insights</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <div class="container">
+
+      <section class="section">
+        <h1>Diary & Personal Logging Application</h1>
+        <p>
+          A lightweight application designed to capture structured daily inputs,
+          reflections, and activity logs in a consistent and queryable format.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Problem Context</h2>
+        <p>
+          Unstructured note-taking tools make it difficult to analyse patterns,
+          track habits, or derive insights over time. Most diary tools prioritise
+          writing experience but neglect data structure.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Solution Design</h2>
+        <p>
+          The application was designed around clean data models rather than free text.
+          Inputs are categorised, timestamped, and stored in a structured format,
+          enabling future analytics and visualisation.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Architecture</h2>
+        <p>
+          The system follows a simple input → validation → storage flow, ensuring
+          consistency without sacrificing usability.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Impact</h2>
+        <p>
+          While intentionally lightweight, the application demonstrates principles
+          of clean data capture, future-proofing, and system thinking that also apply
+          to larger analytics platforms.
+        </p>
+      </section>
+
+    </div>
+  </main>
+</div>
+</body>
+</html>
