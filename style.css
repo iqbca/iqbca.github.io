@@ -324,3 +324,24 @@ body {
   --text-main: #e5e7eb;
   --text-muted: #9ca3af;
 }
+
+p {
+  max-width: 70ch;
+}
+
+.section h2 {
+  letter-spacing: -0.01em;
+}
+
+.hero h1 {
+  letter-spacing: -0.02em;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
