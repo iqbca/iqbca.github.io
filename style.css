@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --bg-main: #0f172a;
-  --bg-panel: #111827;
-  --border: #1f2937;
+  --bg-main: #f8fafc;
+  --bg-panel: #ffffff;
+  --border: #e5e7eb;
+
+  --sidebar-bg: #0f172a;
 
   --accent-primary: #2563eb;
-  --accent-secondary: #0ea5e9;
+  --accent-secondary: #0284c7;
 
-  --text-main: #e5e7eb;
-  --text-muted: #9ca3af;
+  --text-main: #0f172a;
+  --text-muted: #475569;
 }
 
 * {
@@ -19,7 +21,7 @@
 }
 
 body {
-  background: linear-gradient(180deg, #020617, var(--bg-main));
+  background: var(--bg-main);
   color: var(--text-main);
   line-height: 1.65;
 }
@@ -35,8 +37,8 @@ body {
 
 .sidebar {
   width: 280px;
-  background: #020617;
-  border-right: 1px solid var(--border);
+  background: var(--sidebar-bg);
+  border-right: 1px solid #020617;
   padding: 28px 24px;
   position: sticky;
   top: 0;
@@ -46,12 +48,12 @@ body {
 .sidebar h2 {
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--text-main);
+  color: #ffffff;
 }
 
 .tagline {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: #cbd5f5;
   margin: 6px 0 24px;
 }
 
@@ -60,7 +62,7 @@ body {
   padding: 10px 14px;
   margin-bottom: 6px;
   border-radius: 6px;
-  color: var(--text-main);
+  color: #e5e7eb;
   text-decoration: none;
   font-size: 0.95rem;
   transition: background 0.2s ease;
@@ -68,8 +70,8 @@ body {
 
 .sidebar nav a.active,
 .sidebar nav a:hover {
-  background: #111827;
-  color: var(--accent-primary);
+  background: rgba(37, 99, 235, 0.15);
+  color: #ffffff;
 }
 
 .download-btn {
@@ -89,7 +91,7 @@ body {
   position: absolute;
   bottom: 22px;
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: #cbd5f5;
 }
 
 /* ================= CONTENT ================= */
@@ -125,16 +127,17 @@ body {
   color: var(--text-muted);
 }
 
-.hero-actions {
-  margin-top: 26px;
-  display: flex;
-  gap: 14px;
-}
-
 .hero img {
   width: 100%;
   border-radius: 10px;
   border: 1px solid var(--border);
+  background: #ffffff;
+}
+
+.hero-actions {
+  margin-top: 26px;
+  display: flex;
+  gap: 14px;
 }
 
 /* ================= BUTTONS ================= */
@@ -172,7 +175,6 @@ body {
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 14px;
-  color: var(--text-main);
 }
 
 /* ================= METRICS ================= */
@@ -219,7 +221,7 @@ body {
 .tags span {
   padding: 6px 12px;
   border-radius: 999px;
-  background: #020617;
+  background: #f1f5f9;
   border: 1px solid var(--border);
   font-size: 0.8rem;
   color: var(--text-main);
@@ -251,7 +253,7 @@ body {
 
 .reveal {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(18px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
