@@ -316,3 +316,11 @@ body {
     color: #000000;
   }
 }
+
+.dark-mode {
+  --bg-main: #0f172a;
+  --bg-panel: #111827;
+  --border: #1f2937;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+}
