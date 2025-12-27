@@ -53,3 +53,23 @@ img.mock{width:100%;border:1px solid var(--border);border-radius:12px;margin-top
   color: var(--muted);
   font-weight: 500;
 }
+
+
+.link-card {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.card-meta {
+  display: block;
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 500;
+}
