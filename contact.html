@@ -1,17 +1,116 @@
 <!DOCTYPE html>
-<html><head><meta charset='UTF-8'><title>Contact</title>
-<meta name='viewport' content='width=device-width, initial-scale=1'>
-<link rel='stylesheet' href='style.css'></head>
-<body><div class='layout'>
-<aside class='sidebar'><h2>Asif Iqbal</h2>
-<p class='tagline'>Senior Investment Analytics & Automation</p>
-<nav>
-<a class='' href='index.html'>Overview</a>
-<a class='' href='projects.html'>Case Studies</a>
-<a class='' href='skills.html'>Capabilities</a>
-<a class='' href='cv.html'>Career</a>
-<a class='' href='blog.html'>Insights</a>
-<a class='active' href='contact.html'>Contact</a>
-</nav><a class='download-btn' href='#'>Download CV</a></aside>
-<main class='content'><div class='container'><section class='section'><h1>Contact</h1></section></div></main>
-</div></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Asif Iqbal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="Contact Asif Iqbal – senior investment analytics, automation and AI systems professional." />
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1.2fr 1fr;
+      gap:48px;
+    }
+    .contact-card{
+      background:#ffffff;
+      border-radius:20px;
+      padding:36px;
+      box-shadow:0 15px 30px rgba(0,0,0,.08);
+    }
+    .contact-card h3{
+      margin-bottom:14px;
+      color:#1e3a8a;
+    }
+    .contact-link{
+      display:block;
+      margin-bottom:12px;
+      color:#0f172a;
+      font-weight:500;
+    }
+    .contact-link span{
+      color:#64748b;
+      font-weight:400;
+    }
+    @media(max-width:900px){
+      .contact-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">Asif Iqbal</div>
+    <nav>
+      <a href="index.html">Overview</a>
+      <a href="projects.html">Case Studies</a>
+      <a href="skills.html">Capabilities</a>
+      <a href="cv.html">Career</a>
+      <a href="insights.html">Insights</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <h1>Contact</h1>
+
+  <p>
+    For professional opportunities, collaboration, or discussion
+    around investment analytics, automation, or AI systems, feel
+    free to reach out.
+  </p>
+</section>
+
+<div class="contact-grid">
+
+  <!-- CONTACT DETAILS -->
+  <div class="contact-card">
+    <h3>Get in Touch</h3>
+
+    <a class="contact-link" href="mailto:iqb.asif@outlook.com">
+      Email <span>iqb.asif@outlook.com</span>
+    </a>
+
+    <a class="contact-link" href="https://www.linkedin.com/in/iqbca" target="_blank">
+      LinkedIn <span>linkedin.com/in/iqbca</span>
+    </a>
+
+    <a class="contact-link" href="https://github.com/iqbca" target="_blank">
+      GitHub <span>github.com/iqbca</span>
+    </a>
+  </div>
+
+  <!-- AVAILABILITY -->
+  <div class="contact-card">
+    <h3>Availability</h3>
+
+    <p>
+      Open to senior individual contributor or lead roles in
+      investment analytics, reporting automation, and AI-assisted
+      decision-support systems.
+    </p>
+
+    <p>
+      Also open to consulting or advisory discussions where deep
+      analytics systems and governance are required.
+    </p>
+  </div>
+
+</div>
+
+</main>
+
+<footer>
+  © Asif Iqbal · Senior Investment Analytics, Automation & AI Systems
+</footer>
+
+</body>
+</html>
