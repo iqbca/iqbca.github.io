@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Face AI – Real-Time Face Recognition System | Asif Iqbal</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="Case study documenting the design, governance, and implementation of a real-time AI-based face recognition system using Python, deep learning, and GPU acceleration." />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">Asif Iqbal</div>
+    <nav>
+      <a href="index.html">Overview</a>
+      <a href="projects.html" class="active">Case Studies</a>
+      <a href="skills.html">Capabilities</a>
+      <a href="cv.html">Career</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- INTRO -->
+<section>
+  <h1>Face AI – Real-Time Face Recognition System</h1>
+
+  <p>
+    This case study documents the design and implementation of a
+    <strong>real-time face recognition system</strong> built using Python and
+    deep learning techniques, with a focus on accuracy, performance,
+    and operational control rather than experimental novelty.
+  </p>
+
+  <p>
+    The system was developed to explore how modern computer vision pipelines
+    can be structured into a <strong>governed, production-style AI workflow</strong>,
+    including confidence thresholds, fallback mechanisms, and controlled
+    identity enrollment.
+  </p>
+</section>
+
+<!-- PROBLEM -->
+<section>
+  <h2>Problem Context</h2>
+
+  <p>
+    Real-time face recognition systems frequently fail in practice due to
+    over-reliance on single-frame detection, fragile confidence handling,
+    and lack of clear separation between detection, encoding, and matching logic.
+  </p>
+
+  <p>
+    Many implementations also blur the distinction between
+    <strong>identity detection</strong> and <strong>identity confirmation</strong>,
+    leading to misclassification, identity drift, and poor explainability.
+  </p>
+</section>
+
+<!-- OBJECTIVES -->
+<section>
+  <h2>System Objectives</h2>
+
+  <ul>
+    <li>Design a real-time face recognition pipeline with explicit control points</li>
+    <li>Separate face detection, encoding, and matching responsibilities</li>
+    <li>Introduce multi-frame enrollment to improve identity stability</li>
+    <li>Support GPU acceleration while maintaining CPU fallback capability</li>
+    <li>Ensure confidence-driven decision making instead of binary matches</li>
+  </ul>
+</section>
+
+<!-- ARCHITECTURE -->
+<section>
+  <h2>Architecture Overview</h2>
+
+  <p>
+    The system follows a modular architecture where each stage of the
+    face recognition process is independently testable and replaceable.
+  </p>
+
+  <pre class="code-block">
+Webcam Input
+   ↓
+Face Detection (DNN / MediaPipe)
+   ↓
+Face Encoding (Deep Embeddings)
+   ↓
+Similarity Matching (Cosine Distance)
+   ↓
+Threshold Validation
+   ↓
+Identity Confirmation / Unknown
+  </pre>
+
+</section>
+
+<!-- ENROLLMENT -->
+<section>
+  <h2>Identity Enrollment Strategy</h2>
+
+  <p>
+    Instead of enrolling a user from a single captured frame,
+    the system performs <strong>automatic multi-frame enrollment</strong>.
+  </p>
+
+  <p>
+    Multiple face samples are captured across short time intervals,
+    encoded independently, and aggregated into a stable identity
+    representation. This significantly reduces sensitivity to
+    pose, lighting, and transient facial expressions.
+  </p>
+</section>
+
+<!-- GPU -->
+<section>
+  <h2>GPU Acceleration & Fallback Handling</h2>
+
+  <p>
+    The system automatically detects the availability of a
+    CUDA-capable GPU and routes computationally intensive operations
+    through GPU acceleration when possible.
+  </p>
+
+  <p>
+    If GPU resources are unavailable, the system seamlessly falls back
+    to CPU execution without altering functional behaviour, ensuring
+    portability across environments.
+  </p>
+</section>
+
+<!-- GOVERNANCE -->
+<section>
+  <h2>Governance & Risk Controls</h2>
+
+  <ul>
+    <li>Explicit similarity thresholds to prevent forced matches</li>
+    <li>Unknown identity classification below confidence cut-offs</li>
+    <li>Separation of enrollment and recognition modes</li>
+    <li>Persistent storage of embeddings with clear label mapping</li>
+    <li>Controlled update process for identity data</li>
+  </ul>
+</section>
+
+<!-- TECH STACK -->
+<section>
+  <h2>Technology Stack</h2>
+
+  <div class="badges">
+    <span>Python</span>
+    <span>OpenCV</span>
+    <span>Deep Learning</span>
+    <span>CUDA</span>
+    <span>Computer Vision</span>
+    <span>Desktop AI</span>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<section>
+  <h2>Outcomes & Learnings</h2>
+
+  <p>
+    The project demonstrates how face recognition systems can be
+    treated as <strong>controlled AI pipelines</strong> rather than
+    black-box models.
+  </p>
+
+  <p>
+    Emphasis on modularity, confidence governance, and fallback logic
+    results in systems that are easier to validate, extend, and
+    operate reliably in real-world conditions.
+  </p>
+</section>
+
+<!-- GITHUB -->
+<section>
+  <h2>Source Code</h2>
+
+  <p>
+    The complete implementation, including model handling,
+    enrollment logic, and matching strategy, is available on GitHub.
+  </p>
+
+  <a href="https://github.com/yourusername/face-ai"
+     target="_blank"
+     class="project-btn">
+    View Repository
+  </a>
+</section>
+
+</main>
+
+<footer>
+  © Asif Iqbal · Senior Investment Analytics, Automation & AI Systems
+</footer>
+
+</body>
+</html>
