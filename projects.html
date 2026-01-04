@@ -129,6 +129,65 @@
 
   </div>
 </section>
+<!-- Python Face -->
+  <section class="project-card">
+  <div class="project-header">
+    <h2>Face AI – Real-Time Face Recognition System</h2>
+    <span class="project-tag">Python · Computer Vision · CUDA</span>
+  </div>
+
+  <p class="project-desc">
+    A real-time face recognition desktop application built using Python, OpenCV, and deep learning.
+    The system supports GPU acceleration (CUDA), automatic multi-frame face enrollment, and
+    embedding-based identity matching with a GUI interface.
+  </p>
+
+  <div class="project-box">
+    <h3>Key Features</h3>
+    <div class="skill-grid">
+      <span class="skill-pill">Real-time webcam recognition</span>
+      <span class="skill-pill">Automatic face enrollment</span>
+      <span class="skill-pill">Deep face embeddings</span>
+      <span class="skill-pill">CUDA GPU acceleration</span>
+      <span class="skill-pill">CPU fallback support</span>
+      <span class="skill-pill">GUI-based desktop app</span>
+    </div>
+  </div>
+
+  <div class="project-box">
+    <h3>Technical Architecture</h3>
+    <ul>
+      <li>Face detection using OpenCV DNN / MediaPipe</li>
+      <li>Embedding-based recognition (cosine similarity)</li>
+      <li>Multi-frame enrollment with averaged embeddings</li>
+      <li>Threshold-controlled identity locking</li>
+    </ul>
+  </div>
+
+  <div class="project-box">
+    <h3>Project Structure</h3>
+    <pre class="code-block">
+face_recognition_app/
+├── main_gui.py
+├── face_detector.py
+├── face_encoder.py
+├── face_matcher.py
+├── enrollment_manager.py
+├── utils/
+│   └── gpu_utils.py
+├── data/
+│   ├── embeddings.pkl
+│   └── labels.json
+└── requirements.txt
+    </pre>
+  </div>
+
+  <div class="project-footer">
+    <a href="https://github.com/yourusername/face-ai" target="_blank" class="project-btn">
+      View on GitHub
+    </a>
+  </div>
+</section>
 
 <!-- AI -->
 <section>
