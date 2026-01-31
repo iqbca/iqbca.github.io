@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diary of Tom Riddle | Asif Iqbal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <div class="nav">
+    <div class="brand">Asif Iqbal</div>
+    <nav>
+      <a href="projects.html">← Case Studies</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section>
+  <h1>Diary of Tom Riddle — Memory & Persona AI System</h1>
+
+  <h2>Concept</h2>
+  <p>
+    Inspired by the Diary of Tom Riddle, this system explores
+    persistent persona behaviour and long-horizon memory in AI systems.
+  </p>
+
+  <h2>System Design</h2>
+  <ul>
+    <li>Handwritten user input capture</li>
+    <li>Handwriting-style output rendering</li>
+    <li>Persona-constrained language generation (Gemini)</li>
+    <li>Stateful memory across interactions</li>
+  </ul>
+
+  <h2>Outcome</h2>
+  <p>
+    Demonstrates controlled AI personality, memory continuity,
+    and separation between generation engines and behaviour rules.
+  </p>
+</section>
+</main>
+
+<footer>
+  © Asif Iqbal
+</footer>
+</body>
+</html>
