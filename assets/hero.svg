@@ -1,10 +1,1 @@
-
-<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'>
-<defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
-<stop offset='0%' stop-color='#0ea5e9'/>
-<stop offset='100%' stop-color='#1e40af'/>
-</linearGradient></defs>
-<rect width='1200' height='600' fill='url(#g)'/>
-<text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle'
-font-size='48' fill='#fff'>Investment Analytics & Automation</text>
-</svg>
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700'><rect width='1200' height='700' fill='#1e3a8a'/><text x='50%' y='45%' fill='#fff' text-anchor='middle' font-size='46'>Investment Analytics & Automation</text><text x='50%' y='55%' fill='#c7d2fe' text-anchor='middle' font-size='22'>Hero Image</text></svg>
