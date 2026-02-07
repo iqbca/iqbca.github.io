@@ -63,7 +63,6 @@ h2{font-size:2rem;margin-bottom:16px}
 h3{font-size:1.25rem;margin-bottom:8px}
 
 p{color:var(--muted);max-width:100%}
-section > p { max-width: 900px; }
 
 
 .grid{
