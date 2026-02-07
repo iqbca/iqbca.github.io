@@ -138,7 +138,6 @@ footer{
 .hero-content {
   padding: 4rem;
   z-index: 2;
-  background: white;
 }
 
 /* RIGHT SIDE (IMAGE) */
@@ -186,11 +185,18 @@ footer{
     height: 300px;
   }
 
-  .hero-image::before {
-    background: linear-gradient(
-      to top,
-      rgba(255,255,255,1),
-      rgba(255,255,255,0)
-    );
-  }
+.hero-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to left,
+    transparent 0%,
+    color-mix(in srgb, var(--bg-main) 60%, transparent) 45%,
+    var(--bg-main) 70%
+  );
+
+  z-index: 1;
+}
 }
