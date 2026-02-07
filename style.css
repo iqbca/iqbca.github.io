@@ -138,6 +138,7 @@ footer{
 .hero-content {
   padding: 4rem;
   z-index: 2;
+  background: transparent
 }
 
 /* RIGHT SIDE (IMAGE) */
@@ -203,4 +204,8 @@ footer{
 
   z-index: 1;
 }
+}
+
+.hero {
+  background: inherit;
 }
