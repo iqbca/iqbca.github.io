@@ -62,7 +62,7 @@ h1{font-size:3rem;letter-spacing:-0.6px}
 h2{font-size:2rem;margin-bottom:16px}
 h3{font-size:1.25rem;margin-bottom:8px}
 
-p{color:var(--muted);max-width:100%s}
+p{color:var(--muted);max-width:100%}
 
 
 .grid{
@@ -215,7 +215,7 @@ footer{
 
 /* Mobile */
 
-@media (max-width: 1200px) {
+@media (max-width: 100%) {
 
   .hero {
     min-height: 70vh;
