@@ -152,5 +152,48 @@
   © Asif Iqbal · Senior Investment Analytics, Automation & AI Systems
 </footer>
 
+  <script>
+  const cards = document.querySelectorAll('.cert-card');
+  const modal = document.getElementById('certModal');
+  const modalImg = document.getElementById('certModalImg');
+  const closeBtn = document.getElementById('certClose');
+
+  // Open modal
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const img = card.getAttribute('data-img');
+
+      modalImg.src = img;
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Close modal
+  function closeModal(){
+    modal.classList.remove('active');
+    modalImg.src = '';
+    document.body.style.overflow = '';
+  }
+
+  closeBtn.addEventListener('click', closeModal);
+
+  // Click outside
+  modal.addEventListener('click', e => {
+    if(e.target === modal){
+      closeModal();
+    }
+  });
+
+  // ESC key
+  document.addEventListener('keydown', e => {
+    if(e.key === 'Escape'){
+      closeModal();
+    }
+  });
+</script>
+
+  
+
 </body>
 </html>
