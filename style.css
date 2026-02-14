@@ -158,7 +158,7 @@ background: linear-gradient(
   to right, 
   rgba(247, 249, 252, 0.95) 0%,   /* Start solid */
   rgba(247, 249, 252, 0.1) 60%,   /* 60% Mark: Almost transparent (10% opacity) */
-  rgba(247, 249, 252, 0) 90%      /* 90% Mark: Fully transparent */
+  rgba(247, 249, 252, 0) 80%      /* 90% Mark: Fully transparent */
 );
 
   z-index: 2;
