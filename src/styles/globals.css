@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #09090B;
+  --surface: #111217;
+  --border: #27272A;
+
+  --text: #FFFFFF;
+  --secondary: #A1A1AA;
+
+  --accent: #2563EB;
+  --success: #10B981;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter,sans-serif;
+  overflow-x:hidden;
+}
+
+*{
+  box-sizing:border-box;
+}
