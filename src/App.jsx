@@ -3,8 +3,8 @@ import AppRoutes from "./routes/AppRoutes";
 
 export default function App() {
   return (
-    <HashRouter>
-      <AppRoutes />
-    </HashRouter>
+<BrowserRouter>
+  <AppRoutes />
+</BrowserRouter>
   );
 }
