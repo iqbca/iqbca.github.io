@@ -5,7 +5,10 @@ export default function StatCard({ number, label }) {
     <motion.div
       whileHover={{
         y: -8,
-        scale: 1.03,
+        scale: 1.02,
+      }}
+      transition={{
+        duration: 0.25,
       }}
       className="
       relative
@@ -17,17 +20,41 @@ export default function StatCard({ number, label }) {
       from-white/5
       to-white/[0.03]
       backdrop-blur-xl
-      p-10
+      p-8
       text-center
+      group
       "
     >
-      <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-blue-500 to-cyan-400" />
+      {/* Top Accent */}
 
-      <h2 className="text-6xl font-black mb-4">
+      <motion.div
+        className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500"
+        animate={{
+          backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+        }}
+        transition={{
+          duration: 6,
+          repeat: Infinity,
+        }}
+        style={{
+          backgroundSize: "200% 100%",
+        }}
+      />
+
+      {/* Glow */}
+
+      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-blue-500/5" />
+
+      <motion.h2
+        className="relative text-5xl font-black mb-4"
+        whileHover={{
+          scale: 1.05,
+        }}
+      >
         {number}
-      </h2>
+      </motion.h2>
 
-      <p className="text-zinc-400">
+      <p className="relative text-zinc-400 leading-7">
         {label}
       </p>
     </motion.div>
